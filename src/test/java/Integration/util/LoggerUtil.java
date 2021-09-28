@@ -20,23 +20,7 @@ public class LoggerUtil {
 		//String name = clazz.getSimpleName();
 	//	logger = Logger.getLogger(clazz);
 		System.out.println("#### In get log");
-	/*	logger = Logger.getRootLogger();
-	
-		logger.removeAllAppenders(); // 清空Appender，特別是不想使用現存實例時一定要初期化  
-		logger.setLevel(Level.INFO); // 设定Logger級別。  
-		logger.setAdditivity(false); 
-		
-		appender  = new RollingFileAppender(); 
-		PatternLayout layout = new PatternLayout();  
-	    layout.setConversionPattern("[%d{yyyy-MM-dd HH:mm:ss}] %p %l : %m%n");
-	    
-	    appender.setLayout(layout);         
-	    appender.setFile(fileBase+"/"+getTime("yyyy-MM-dd") + ".log");  // log输出路径
-        appender.setEncoding("UTF-8"); // log的字符编码  
-        appender.setAppend(false);  //日志合并方式： true:在已存在log文件后面追加 false:新log覆盖以前的log  
-        appender.activateOptions();  // 适用当前配置  
-        
-        logger.addAppender(appender);*/
+
 		
 		
 		String log4JPropertyFile = "resources\\log4j.properties";
