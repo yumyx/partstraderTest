@@ -1,0 +1,30 @@
+ [ {"navigateTo":"http://automationpractice.com/",
+    "searchFor":"Printed Summer Dress",
+    "selectProduct":"Price: Lowest first",
+    "product":{
+        "quantity":2,
+        "size":"M",
+        "colour":"Yellow",
+        "action":"Add to cart"
+    },
+    "action":"Proceed to Checkout",
+    "shoppingCartSummary": {
+        "Total":"$34.80"
+        }
+},
+
+ {"navigateTo":"http://automationpractice.com/",
+    "searchFor":"Printed Summer Dress",
+    "selectProduct":"Price: Lowest first",
+    "product":{
+        "quantity":2,
+        "size":"S",
+        "colour":"Green",
+        "action":"Add to cart"
+    },
+    "action":"Proceed to Checkout",
+    "shoppingCartSummary": {
+        "Total":"$79.60"
+        }
+}
+]

@@ -1,0 +1,6 @@
+
+.classpath
+*.log
+*.png
+.settings
+target
