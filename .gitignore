@@ -4,3 +4,4 @@
 *.png
 .settings
 target
+.idea
