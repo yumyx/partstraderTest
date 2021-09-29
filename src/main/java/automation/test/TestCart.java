@@ -3,13 +3,13 @@ package automation.test;
 import automation.pages.*;
 import automation.Params.ParamInput;
 import automation.util.JasonDataProvider;
-<<<<<<< Updated upstream:src/main/java/automation/test/TestCart.java
+
 import automation.util.TestNGListener;
 import automation.util.WDriver;
 import org.testng.TestNG;
-=======
+
 import automation.util.LoggerUtil;
->>>>>>> Stashed changes:src/test/java/Integration/test/TestCart.java
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

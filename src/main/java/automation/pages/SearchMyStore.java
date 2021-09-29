@@ -1,9 +1,7 @@
 package automation.pages;
 
-<<<<<<< Updated upstream:src/main/java/automation/pages/SearchMyStore.java
-=======
 import automation.util.LoggerUtil;
->>>>>>> Stashed changes:src/test/java/Integration/pages/SearchMyStore.java
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;

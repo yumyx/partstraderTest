@@ -1,10 +1,9 @@
 package automation.pages;
 
 import automation.Params.ParamInput;
-<<<<<<< Updated upstream:src/main/java/automation/pages/SortView.java
-=======
+
 import automation.util.LoggerUtil;
->>>>>>> Stashed changes:src/test/java/Integration/pages/SortView.java
+
 import automation.util.WDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
