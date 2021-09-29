@@ -1,4 +1,4 @@
-package Integration.Params;
+package automation.Params;
 /*
 1.	Navigate to http://automationpractice.com/
 2.	Search for ‘Printed Summer Dress’
@@ -15,8 +15,6 @@ package Integration.Params;
  */
 
 
-import Integration.Params.Product;
-import Integration.Params.ShoppingCartSummary;
 import lombok.Data;
 
 @Data

@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Integration</name>
+  <name>automation</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -117,7 +117,7 @@
                <addClasspath>true</addClasspath>
                <useUniqueVersions>false</useUniqueVersions>
                <classpathPrefix>lib/</classpathPrefix>
-               <mainClass>Integration.test.TestCart</mainClass>
+               <mainClass>automation.test.TestCart</mainClass>
              </manifest>
              <manifestEntries>
                <version>${project.version}</version>

@@ -1,4 +1,4 @@
-package Integration.Params;
+package automation.Params;
 
 /*
 1.	Navigate to http://automationpractice.com/

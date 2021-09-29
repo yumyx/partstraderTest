@@ -1,6 +1,5 @@
-package Integration.pages;
+package automation.pages;
 
-import Integration.util.WDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

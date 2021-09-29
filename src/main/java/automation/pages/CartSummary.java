@@ -1,9 +1,9 @@
-package Integration.pages;
+package automation.pages;
 
-import Integration.util.WDriver;
+import automation.util.WDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import Integration.Params.ParamInput;
+import automation.Params.ParamInput;
 
 public class CartSummary extends BasicPage{
 

@@ -1,7 +1,7 @@
-package Integration.pages;
+package automation.pages;
 
-import Integration.util.WDriver;
-import   Integration.Params.ParamInput;
+import automation.util.WDriver;
+import   automation.Params.ParamInput;
 
 public class BasicPage {
     protected WDriver driver;

@@ -1,6 +1,6 @@
-package Integration.util;
+package automation.util;
 
-import Integration.Params.ParamInput;
+import automation.Params.ParamInput;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.testng.annotations.DataProvider;

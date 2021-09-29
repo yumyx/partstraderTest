@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Integration</groupId>
   <artifactId>Integration</artifactId>
-  <name>Integration</name>
+  <name>automation</name>
   <version>0.0.1-SNAPSHOT</version>
   <url>http://maven.apache.org</url>
   <build>
@@ -41,7 +41,7 @@
               <addClasspath>true</addClasspath>
               <useUniqueVersions>false</useUniqueVersions>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>Integration.test.TestCart</mainClass>
+              <mainClass>automation.test.TestCart</mainClass>
             </manifest>
             <manifestEntries>
               <version>${project.version}</version>

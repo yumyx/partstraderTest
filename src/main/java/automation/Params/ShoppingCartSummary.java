@@ -1,4 +1,4 @@
-package Integration.Params;
+package automation.Params;
 
 import lombok.Data;
 

@@ -1,12 +1,10 @@
-package Integration.test;
+package automation.test;
 
-import Integration.mainTest;
-import Integration.pages.*;
-import Integration.Params.ParamInput;
-import Integration.util.JasonDataProvider;
-import Integration.util.TestNGListener;
-import Integration.util.WDriver;
-import org.testng.TestListenerAdapter;
+import automation.pages.*;
+import automation.Params.ParamInput;
+import automation.util.JasonDataProvider;
+import automation.util.TestNGListener;
+import automation.util.WDriver;
 import org.testng.TestNG;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

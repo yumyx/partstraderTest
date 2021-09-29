@@ -3,13 +3,13 @@
 <suite name="Failed suite [Command line suite]">
   <test thread-count="5" name="Command line test(failed)">
     <classes>
-      <class name="Integration.test.TestCart">
+      <class name="automation.test.TestCart">
         <methods>
           <include name="testShoppingCart" invocation-numbers="0 1"/>
           <include name="afterClass"/>
           <include name="init"/>
         </methods>
-      </class> <!-- Integration.test.TestCart -->
+      </class> <!-- automation.test.TestCart -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

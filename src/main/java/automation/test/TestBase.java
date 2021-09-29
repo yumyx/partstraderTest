@@ -1,9 +1,9 @@
-package Integration.test;
+package automation.test;
 
 
-import Integration.Params.ParamInput;
-import Integration.util.ExtentManager;
-import Integration.util.WDriver;
+import automation.Params.ParamInput;
+import automation.util.ExtentManager;
+import automation.util.WDriver;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

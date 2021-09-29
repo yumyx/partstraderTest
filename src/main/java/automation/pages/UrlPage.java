@@ -1,6 +1,6 @@
-package Integration.pages;
-import Integration.Params.ParamInput;
-import Integration.util.WDriver;
+package automation.pages;
+import automation.Params.ParamInput;
+import automation.util.WDriver;
 
 public class UrlPage extends BasicPage{
     public UrlPage(BasicPage page){

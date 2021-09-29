@@ -1,4 +1,4 @@
-package Integration.util;
+package automation.util;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

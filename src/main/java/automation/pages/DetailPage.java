@@ -1,11 +1,10 @@
-package Integration.pages;
+package automation.pages;
 
-import Integration.Params.Product;
-import Integration.util.WDriver;
+import automation.Params.Product;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import Integration.Params.ParamInput;
+import automation.Params.ParamInput;
 
 import java.util.HashMap;
 

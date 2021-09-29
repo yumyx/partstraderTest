@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-   <!--  <listener class-name="Integration.util.ReportListener"/>-->
-    <listener class-name="Integration.util.RetryListener"/>
-     <listener class-name="Integration.util.TestNGListener"/> 
+   <!--  <listener class-name="automation.util.ReportListener"/>-->
+    <listener class-name="automation.util.RetryListener"/>
+     <listener class-name="automation.util.TestNGListener"/>
    </listeners>
   <test thread-count="5" name="Test">
     <classes>
      
      
       
-     <class name="Integration.test.TestCart"/>
+     <class name="automation.test.TestCart"/>
 
     </classes>
   </test> <!-- Test -->

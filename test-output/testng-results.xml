@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test started-at="2021-09-29T19:19:56 NZDT" name="Command line test" finished-at="2021-09-29T19:20:41 NZDT" duration-ms="45728">
-      <class name="Integration.test.TestCart">
-        <test-method is-config="true" signature="init()[pri:0, instance:Integration.test.TestCart@327b636c]" started-at="2021-09-29T19:19:56 NZDT" name="init" finished-at="2021-09-29T19:19:58 NZDT" duration-ms="1900" status="PASS">
+      <class name="automation.test.TestCart">
+        <test-method is-config="true" signature="init()[pri:0, instance:automation.test.TestCart@327b636c]" started-at="2021-09-29T19:19:56 NZDT" name="init" finished-at="2021-09-29T19:19:58 NZDT" duration-ms="1900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testShoppingCart(Integration.Params.ParamInput)[pri:0, instance:Integration.test.TestCart@327b636c]" started-at="2021-09-29T19:19:58 NZDT" name="testShoppingCart" data-provider="JasonReader" finished-at="2021-09-29T19:20:40 NZDT" duration-ms="42257" status="FAIL">
+        <test-method signature="testShoppingCart(automation.Params.ParamInput)[pri:0, instance:automation.test.TestCart@327b636c]" started-at="2021-09-29T19:19:58 NZDT" name="testShoppingCart" data-provider="JasonReader" finished-at="2021-09-29T19:20:40 NZDT" duration-ms="42257" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@ Session ID: 7ab35599912c7e78209d7353469d9e1e
 *** Element info: {Using=id, value=selectProductSort}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#selectProductSort"}
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#selectProductSort"}
   (Session info: chrome=94.0.4606.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
@@ -59,10 +59,10 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy11.getTagName(Unknown Source)
 at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-at Integration.pages.SearchMyStore.sortBy(SearchMyStore.java:30)
-at Integration.pages.SearchMyStore.sortBy(SearchMyStore.java:23)
-at Integration.test.TestCart.doShopTest(TestCart.java:73)
-at Integration.test.TestCart.testShoppingCart(TestCart.java:32)
+at automation.pages.SearchMyStore.sortBy(SearchMyStore.java:30)
+at automation.pages.SearchMyStore.sortBy(SearchMyStore.java:23)
+at automation.test.TestCart.doShopTest(TestCart.java:73)
+at automation.test.TestCart.testShoppingCart(TestCart.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,14 +88,14 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at Integration.test.TestCart.main(TestCart.java:101)
+at automation.test.TestCart.main(TestCart.java:101)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testShoppingCart -->
-        <test-method signature="testShoppingCart(Integration.Params.ParamInput)[pri:0, instance:Integration.test.TestCart@327b636c]" started-at="2021-09-29T19:20:40 NZDT" name="testShoppingCart" data-provider="JasonReader" finished-at="2021-09-29T19:20:40 NZDT" duration-ms="256" status="FAIL">
+        <test-method signature="testShoppingCart(automation.Params.ParamInput)[pri:0, instance:automation.test.TestCart@327b636c]" started-at="2021-09-29T19:20:40 NZDT" name="testShoppingCart" data-provider="JasonReader" finished-at="2021-09-29T19:20:40 NZDT" duration-ms="256" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@ Session ID: 7ab35599912c7e78209d7353469d9e1e
 *** Element info: {Using=id, value=search_query_top}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_query_top"}
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_query_top"}
   (Session info: chrome=94.0.4606.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
@@ -142,10 +142,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-at Integration.pages.MyStore.search(MyStore.java:27)
-at Integration.pages.MyStore.search(MyStore.java:22)
-at Integration.test.TestCart.doShopTest(TestCart.java:67)
-at Integration.test.TestCart.testShoppingCart(TestCart.java:32)
+at automation.pages.MyStore.search(MyStore.java:27)
+at automation.pages.MyStore.search(MyStore.java:22)
+at automation.test.TestCart.doShopTest(TestCart.java:67)
+at automation.test.TestCart.testShoppingCart(TestCart.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,18 +171,18 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at Integration.test.TestCart.main(TestCart.java:101)
+at automation.test.TestCart.main(TestCart.java:101)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testShoppingCart -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Integration.test.TestCart@327b636c]" started-at="2021-09-29T19:20:40 NZDT" name="afterClass" finished-at="2021-09-29T19:20:41 NZDT" duration-ms="957" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:automation.test.TestCart@327b636c]" started-at="2021-09-29T19:20:40 NZDT" name="afterClass" finished-at="2021-09-29T19:20:41 NZDT" duration-ms="957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- Integration.test.TestCart -->
+      </class> <!-- automation.test.TestCart -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>
