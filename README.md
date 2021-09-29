@@ -1,21 +1,23 @@
 ## Technical Stack
 
-* React
-* Redux
-* React-Router
-* Redux-Saga
-* Ant-D
+* Selenium WebDriver
+* TestNG
+* Extent Report
+* Log4j
+* Gson
 
 ### Software Installation :
-* Install node and npm 
-* Install IntelliJ IDEA Ultimate Edition （Optional）
-* Install Docker Desktop
+* Install Java 11
+* Install IntelliJ IDEA Community Edition （Optional）
+* Install Maven
 
-
+## If no Maven 
+unzip the file
+cd project folder
 
 ## Install Dependencies:
 ```hash
-$ npm install
+$ mvn install
 ```
 
 
@@ -34,22 +36,15 @@ $ npm run build
 
 ## Directories
 ```hash
-├───public
-├───scripts
-├───config
+├───lib          Browser Driver exe file
+├───resources    test data
 └───src 
-    ├───api      for API setting 
-    ├───components      
-    ├───config      
-    ├───css         
     ├───pages      
-    ├───route       
-    ├───static  
-    ├───store       
-    │   ├───action-types  
-    │   ├───actions     
-    │   ├───reducers    
-    │   └───sagas       
-    └───utils       
-
-```
+    ├───Params      
+    ├───test      
+    ├───util        
+└───test-output
+    ├───log               log file
+    └───extent-report
+├───testng.xml
+└───pom.xml
