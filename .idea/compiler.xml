@@ -11,5 +11,8 @@
         <module name="Integration" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="partstraderTest" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
