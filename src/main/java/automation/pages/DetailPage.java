@@ -52,6 +52,7 @@ public class DetailPage extends BasicPage{
 
 
        // plus.click();
+        debugInfo("set size:"+product.getSize());
         new Select(size).selectByVisibleText(product.getSize());
        // Green.click();
 
