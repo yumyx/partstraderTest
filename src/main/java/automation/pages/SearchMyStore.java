@@ -1,6 +1,6 @@
 package automation.pages;
 
-import automation.util.LoggerUtil;
+
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +17,7 @@ public class SearchMyStore extends UrlPage {
 
     }
     public void sortBy(){
-        LoggerUtil.debugInfo("Sort "+params.getSelectProduct());
+        debugInfo("Sort By:"+params.getSelectProduct());
         sortBy(params.getSelectProduct());
 
     }

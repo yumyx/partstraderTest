@@ -14,6 +14,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static automation.pages.BasicPage.debugInfo;
+
 
 public class TestCart extends TestBase{
 
@@ -26,9 +28,7 @@ public class TestCart extends TestBase{
   @Test(dataProvider = "JasonReader",dataProviderClass = JasonDataProvider.class)
   public void testShoppingCart(ParamInput param){
     parameter = param;
-    String testName="testShoppingCart";
-    LoggerUtil.debugInfo(" Start testing "+testName);
-    doShopTest( testName,param);
+    doShopTest( param);
   }
 
 
@@ -39,7 +39,11 @@ public class TestCart extends TestBase{
 
   }
 
-    public void doShopTest(String testName,ParamInput params){
+    public void doShopTest(ParamInput params){
+      debugInfo("================================================");
+      debugInfo("Test Name:"+params.get_TestName_());
+      debugInfo("Test Description:"+params.get_TestDescription_());
+      debugInfo("================================================");
 
     MyStore myStore = new MyStore(driver,params);
    // p.search("Printed Summer Dress");

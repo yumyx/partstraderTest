@@ -25,7 +25,7 @@ public class SortView extends UrlPage{
     //3.	Select the cheapest dress
     public void selectCheapest()
     {
-        LoggerUtil.debugInfo("Select the cheapest ");
+        debugInfo("Select the cheapest ");
         //Wait for the sort to complete. url is changed after sort
         boolean ret = waitForUrl(25, params.getURLToSearchAfterSort());
         assertEquals(ret,true);
@@ -54,7 +54,8 @@ public class SortView extends UrlPage{
 
         WebElement firstEle = driver.findBy(By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[1]/span[1]"));
         String firstText=firstEle.getText();
-        assertEquals(firstText,cheapestText);
+        debugInfo("check Lowest price:");
+        assertEq(firstText,cheapestText);
 
 
         //  return driver.findElements(By.className("product-container"));

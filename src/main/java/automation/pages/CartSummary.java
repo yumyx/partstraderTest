@@ -1,7 +1,7 @@
 package automation.pages;
 
 
-import automation.util.LoggerUtil;
+import static automation.pages.BasicPage.debugInfo;
 
 import automation.util.WDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +35,7 @@ public class CartSummary extends BasicPage{
     }
     public void selectAction(){
         String action = params.getAction();
-        LoggerUtil.debugInfo("Action :"+action);
+        debugInfo("Action :"+action);
         if(action.equals("Proceed to Checkout"))
             proceed();
         else if(action.equals("ContinueShopping"))

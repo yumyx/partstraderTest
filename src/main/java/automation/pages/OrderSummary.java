@@ -3,7 +3,7 @@ package automation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static org.testng.Assert.assertEquals;
+
 
 public class OrderSummary extends BasicPage{
 
@@ -21,6 +21,8 @@ public class OrderSummary extends BasicPage{
         return total.getText();
     }
     public void checkTotal(){
-        assertEquals(getTotal(),params.getShoppingCartSummary().getTotal());
+
+        debugInfo("checkTotal:");
+        assertEq(getTotal(),params.getShoppingCartSummary().getTotal());
     }
 }

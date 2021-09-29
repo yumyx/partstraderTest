@@ -8,6 +8,8 @@ import automation.Params.ParamInput;
 
 import java.util.HashMap;
 
+import static automation.pages.BasicPage.debugInfo;
+
 public class DetailPage extends BasicPage{
 
     @FindBy(xpath="//*[@id=\"quantity_wanted_p\"]/a[2]")
@@ -42,13 +44,18 @@ public class DetailPage extends BasicPage{
         Product product = params.product;
         quantity_wanted.clear();
 
-        quantity_wanted.sendKeys(""+product.getQuantity());
+
+        String quantity=""+product.getQuantity();
+
+        quantity_wanted.sendKeys(quantity);
+        debugInfo("set quantity:"+quantity);
 
 
        // plus.click();
         new Select(size).selectByVisibleText(product.getSize());
        // Green.click();
 
+        debugInfo("set colour:"+product.colour);
         WebElement colorEm = colorMap.get(product.colour);
         if(colorEm!=null)
             colorEm.click();

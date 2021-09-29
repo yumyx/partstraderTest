@@ -2,7 +2,7 @@ package automation.pages;
 
 
 
-import automation.util.LoggerUtil;
+
 import automation.util.WDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,10 +26,10 @@ public class MyStore extends  BasicPage {
 
     public void search(String text){
         String url = params.getNavigateTo();
-        LoggerUtil.debugInfo("Access URL "+url);
+        debugInfo("Access URL: "+url);
         driver.get(url);
         searchText.sendKeys(text);
-        LoggerUtil.debugInfo("Searching "+text);
+        debugInfo("Searching: "+text);
         searchButton.click();
        // WebElement sort = driver.findBy(By.id("selectProductSort"));
         //new Select(sort).selectByVisibleText(params.getSelectProduct());
