@@ -5,6 +5,7 @@
 .settings
 target
 .idea
-test-output/extent-report.html
+test-output
 partstraderTest-main.zip
 partstraderTest-main (1).zip
+
