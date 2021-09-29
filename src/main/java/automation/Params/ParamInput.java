@@ -32,6 +32,8 @@ public class ParamInput {
    //2.	Search for ‘Printed Summer Dress’
    private String searchFor;// ="Printed Summer Dress";
 
+    private String URLToSearch;  //"search_query=Printed+Summer+Dress"
+    private String URLToSearchAfterSort; //"orderby=price&orderway=asc"
     //3.	Select the cheapest dress
     private  String selectProduct="Price: Lowest first";
 

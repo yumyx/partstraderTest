@@ -43,7 +43,6 @@ public class WDriver {
   }
     /***
      * Get current url
-     * @param url
      */
   public String currentURL(){
       return driver.getCurrentUrl();
@@ -93,113 +92,15 @@ public class WDriver {
    public void quit() {
         driver.quit();
    }
-  public void sendActionKeys(Keys key) {
-	  action.sendKeys(key).perform();
-	  
-  }
-  
-  public void switchToDefaultContent() {
-	  driver.switchTo().defaultContent();	  
-  }
-  public void swithToFrameIndex(int i) {
-	  driver.switchTo().frame(0);
-  }
-  public void switchToFrame(String name) {
-	  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(name));
-	  
-  }
-  public void switchToFrame(By by) {
-	  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(by));
-	 
-  }
 
-  public void waitForElementClickable(WebElement element) {
-	  wait.until(ExpectedConditions.elementToBeClickable(element));
-  }
-
-
-
-  public void sendKeysWithWait(WebElement elem,String s) {
-	  waitForElement(elem);
-	  elem.sendKeys(s);
-  }
-  public Alert switchToAlert() {
-	  return driver.switchTo().alert();
-  }
-  public void sendKeys(WebElement elem,String s) {
-	  elem.sendKeys(s);
-  }
-  public WebElement elementClickable(By by) {
-	  return wait.until(ExpectedConditions.elementToBeClickable(by));
-  }
-  public void executJSClick(WebElement ele) {
-  	JavascriptExecutor js = (JavascriptExecutor)driver;
-  	js.executeScript("arguments[0].click();", ele);
-  }
-  public String getCurrentWindow() {
-	  return driver.getWindowHandle();
-  }
-  public String getCurrentURL() {
-	  return driver.getCurrentUrl();
-  }
-  public Set<String> getWindows() {
-	  return driver.getWindowHandles();
-  }
   public WebDriver getDriver() {
 	  return driver;
-  }
-  public void swithToWindow(String s) {
-	  driver.switchTo().window(s);
-  }
-  public void maximize() {
-	  driver.manage().window().maximize();	
   }
 
   public void moveToElement(WebElement ele) {
       action.moveToElement(ele).perform();
   }
-  public void actionClick(WebElement ele) {
-	  moveToElement(ele);
-	  try {
-		  Thread.sleep(20000);  
-	  }catch(Exception ex) {
-		  
-	  }
-	  
-	  action.click().perform();
-  }
-  public void pageDown(int repeat) {
-	  int i=0;
-	  while(i++<repeat) 
-	  {
-		  action.sendKeys(Keys.PAGE_DOWN).perform();
-		  try {
-			   Thread.sleep(500);
-		  }catch(Exception ex) {
-			   
-		  }
-	 }
-	  
-  }
-  public void findByWithoutWait(By by) {
-	  driver.findElement(by);
-  }
-  public void scrollDownTillWebElementVisible(By by) {
-	 boolean found = false;
-	 while(!found) 
-	 {
-		 try {
-			 this.pageDown(1);
-			 WebElement adiveToGP = driver.findElement(by);
-			 found = adiveToGP.isDisplayed();
-			 
-		 }catch(Exception ex) {
-			 
-		 }
-	 }
-	 
-	
-  }
+
   public void takeScreenShot(String testName){
       TakesScreenshot scrShot =((TakesScreenshot)driver);
       File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);

@@ -1,6 +1,7 @@
 ## Technical Stack
-
-* Selenium WebDriver
+* Windows 10  (Not tested in Mac, Linux)
+* Chrome Version 94.0.4606.61
+* Selenium WebDriver 
 * TestNG
 * Extent Report
 * Log4j
@@ -9,42 +10,43 @@
 ### Software Installation :
 * Install Java 11
 * Install IntelliJ IDEA Community Edition （Optional）
-* Install Maven
+* Install Maven （Optional）
 
-## If no Maven 
-unzip the file
-cd project folder
-
-## Install Dependencies:
+## Run java 
 ```hash
-$ mvn install
+unzip partstraderTest-main.zip
+```
+```hash
+cd partstraderTest-main
+```
+```hash
+java -jar automation-0.0.1-SNAPSHOT.jar
 ```
 
-
-## Running Locally:
+## Run in Maven:
 ```hash
-$ npm run start
+cd partstraderTest-main
+```
+```hash
+mvn install
 ```
 
-Visit: `http://localhost:3000/`
-
-## Build
-* Minimum 13.2G free  memory in your PC
-```hash
-$ npm run build
-```
 
 ## Directories
 ```hash
-├───lib          Browser Driver exe file
-├───resources    test data
+├───lib                    
+└───resources              
+    └───testShoppingCart.json    input test data
 └───src 
     ├───pages      
     ├───Params      
     ├───test      
-    ├───util        
+    └───util        
 └───test-output
-    ├───log               log file
-    └───extent-report
-├───testng.xml
-└───pom.xml
+    ├───log                     log file
+    └───extent-report.html      test report
+├───testng.xml             
+├───pom.xml
+├───automation-0.0.1-SNAPSHOT.jar
+├───Test_Green_Dress.OrderSummary.png       screenshot of Test_Green_Dress 
+└───Test_Yellow_Dress.OrderSummary.png      screenshot of Test_Yellow_Dress
