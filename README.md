@@ -1,55 +1,52 @@
 ## Technical Stack
-
-* React
-* Redux
-* React-Router
-* Redux-Saga
-* Ant-D
+* Windows 10  (Not tested in Mac, Linux)
+* Chrome Version 94.0.4606.61
+* Selenium WebDriver 
+* TestNG
+* Extent Report
+* Log4j
+* Gson
 
 ### Software Installation :
-* Install node and npm 
-* Install IntelliJ IDEA Ultimate Edition （Optional）
-* Install Docker Desktop
+* Install Java 11
+* Install IntelliJ IDEA Community Edition （Optional）
+* Install Maven （Optional）
 
-
-
-## Install Dependencies:
+## Run java 
 ```hash
-$ npm install
+unzip partstraderTest-main.zip
+```
+```hash
+cd partstraderTest-main
+```
+```hash
+java -jar automation-0.0.1-SNAPSHOT.jar
 ```
 
-
-## Running Locally:
+## Run in Maven:
 ```hash
-$ npm run start
+cd partstraderTest-main
+```
+```hash
+mvn install
 ```
 
-Visit: `http://localhost:3000/`
-
-## Build
-* Minimum 13.2G free  memory in your PC
-```hash
-$ npm run build
-```
 
 ## Directories
 ```hash
-├───public
-├───scripts
-├───config
+├───lib                    
+└───resources              
+    └───testShoppingCart.json    input test data
 └───src 
-    ├───api      for API setting 
-    ├───components      
-    ├───config      
-    ├───css         
     ├───pages      
-    ├───route       
-    ├───static  
-    ├───store       
-    │   ├───action-types  
-    │   ├───actions     
-    │   ├───reducers    
-    │   └───sagas       
-    └───utils       
-
-```
+    ├───Params      
+    ├───test      
+    └───util        
+└───test-output
+    ├───log                     log file
+    └───extent-report.html      test report
+├───testng.xml             
+├───pom.xml
+├───automation-0.0.1-SNAPSHOT.jar
+├───Test_Green_Dress.OrderSummary.png       screenshot of Test_Green_Dress 
+└───Test_Yellow_Dress.OrderSummary.png      screenshot of Test_Yellow_Dress

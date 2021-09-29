@@ -23,7 +23,7 @@ public class SearchMyStore extends UrlPage {
     }
 
     public void sortBy(String s){
-        boolean ret = waitForUrl(15, "search_query=Printed+Summer+Dress");
+        boolean ret = waitForUrl(15, params.getURLToSearch());
         assertEquals(ret,true);
         new Select(sort).selectByVisibleText(s);
 

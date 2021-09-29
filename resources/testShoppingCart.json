@@ -4,6 +4,8 @@
      "_TestDescription_":"Test Green Dress size:M,quantity:2",
      "navigateTo":"http://automationpractice.com/",
      "searchFor":"Printed Summer Dress",
+	 "URLToSearch":"search_query=Printed+Summer+Dress",
+	 "URLToSearchAfterSort":"orderby=price&orderway=asc",
      "selectProduct":"Price: Lowest first",
      "product":{
        "quantity":2,
@@ -22,6 +24,8 @@
     "_TestDescription_":"Test Yellow Dress",
 	"navigateTo":"http://automationpractice.com/",
     "searchFor":"Printed Summer Dress",
+	"URLToSearch":"search_query=Printed+Summer+Dress",
+	"URLToSearchAfterSort":"orderby=price&orderway=asc",
     "selectProduct":"Price: Lowest first",
     "product":{
         "quantity":2,

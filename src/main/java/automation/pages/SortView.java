@@ -27,7 +27,7 @@ public class SortView extends UrlPage{
     {
         LoggerUtil.debugInfo("Select the cheapest ");
         //Wait for the sort to complete. url is changed after sort
-        boolean ret = waitForUrl(25, "orderby=price&orderway=asc");
+        boolean ret = waitForUrl(25, params.getURLToSearchAfterSort());
         assertEquals(ret,true);
 
         WebElement center_column = driver.findBy(By.id("center_column"));
