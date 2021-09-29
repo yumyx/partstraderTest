@@ -4,7 +4,9 @@ import Integration.mainTest;
 import Integration.pages.*;
 import Integration.Params.ParamInput;
 import Integration.util.JasonDataProvider;
+import Integration.util.TestNGListener;
 import Integration.util.WDriver;
+import org.testng.TestListenerAdapter;
 import org.testng.TestNG;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -93,7 +95,10 @@ public class TestCart extends TestBase{
 
   public static void main(String[] args) {
     TestNG testng = new TestNG();
+    TestNGListener tla = new TestNGListener();
     testng.setTestClasses(new Class[]{TestCart.class});
+    testng.addListener(tla);
     testng.run();
+
   }
 }
