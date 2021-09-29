@@ -3,17 +3,20 @@ package automation.test;
 import automation.pages.*;
 import automation.Params.ParamInput;
 import automation.util.JasonDataProvider;
+<<<<<<< Updated upstream:src/main/java/automation/test/TestCart.java
 import automation.util.TestNGListener;
 import automation.util.WDriver;
 import org.testng.TestNG;
+=======
+import automation.util.LoggerUtil;
+>>>>>>> Stashed changes:src/test/java/Integration/test/TestCart.java
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
 
 public class TestCart extends TestBase{
-    private WDriver driver;
+
   @BeforeClass
     public void init(){
       driver = this.initDriver();
@@ -23,15 +26,12 @@ public class TestCart extends TestBase{
   @Test(dataProvider = "JasonReader",dataProviderClass = JasonDataProvider.class)
   public void testShoppingCart(ParamInput param){
     parameter = param;
-
     String testName="testShoppingCart";
-
-   //System.out.println("@@@ in test :"+param.getProduct().getColour());
+    LoggerUtil.debugInfo(" Start testing "+testName);
     doShopTest( testName,param);
   }
 
 
-  //@Test(dataProvider = "JasonReader",dataProviderClass = JasonDataProvider.class)
   public void testShoppingCart1(ParamInput paramInput){
     driver.get(paramInput.getNavigateTo());
     SortView sortView = new SortView(driver,paramInput);
@@ -40,25 +40,6 @@ public class TestCart extends TestBase{
   }
 
     public void doShopTest(String testName,ParamInput params){
-
-    /*
-{"navigateTo":"http://automationpractice.com/",
-    "searchFor":"Printed Summer Dress",
-    "selectProduct":"Price: Lowest first",
-    "product":{
-        "quantity":2,
-        "size":"M",
-        "colour":"Green",
-        "action":"Add to cart"
-    },
-    "action":"Proceed to Checkout",
-    "shoppingCartSummary": {
-        "Total":"$34.80"
-        }
-}
-
-     */
-
 
     MyStore myStore = new MyStore(driver,params);
    // p.search("Printed Summer Dress");
@@ -82,7 +63,7 @@ public class TestCart extends TestBase{
     orderSummary.checkTotal();
 
 
-      orderSummary.takeScreenShot();
+    orderSummary.takeScreenShot();
   }
    @AfterClass
    public void afterClass() {

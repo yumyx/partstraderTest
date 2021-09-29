@@ -17,10 +17,11 @@
      }
    },
 
-   {"navigateTo":"http://automationpractice.com/",
+   {
+	"_TestName_":"Test_Yellow_Dress",
+    "_TestDescription_":"Test Yellow Dress",
+	"navigateTo":"http://automationpractice.com/",
     "searchFor":"Printed Summer Dress",
-   "_TestName_":"Test_Yellow_Dress",
-   "_TestDescription_":"Test Yellow Dress",
     "selectProduct":"Price: Lowest first",
     "product":{
         "quantity":2,

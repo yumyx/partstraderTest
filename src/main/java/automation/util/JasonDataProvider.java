@@ -13,6 +13,9 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * This is to read test data from Jason file. TestNG will pass the test data to test case by DataProvider annotation
+ */
 public class JasonDataProvider {
     static String fileLocation = "./resources/";
     static HashMap<String, String> map;
@@ -20,8 +23,6 @@ public class JasonDataProvider {
     public static Object[][] readFile(Method m) {
         String testname = m.getName();
         String dataFile = fileLocation +testname+".json";
-        System.out.println("@@@@ data file:"+dataFile);
-
 
         Gson gson = new Gson();
         ParamInput params=null;
@@ -34,10 +35,8 @@ public class JasonDataProvider {
             e.printStackTrace();
         }
         //convert the json string back to object
-        //  DataObject obj = gson.fromJson(br, DataObject.class);
-        //   params = gson.fromJson(br,ParamInput.class);
-        Type listType = new TypeToken<List<ParamInput>>() {}.getType();
 
+        Type listType = new TypeToken<List<ParamInput>>() {}.getType();
         List<ParamInput> list = gson.fromJson(br, listType);
         int size = list.size();
         Object[][] data = new Object[size][1];

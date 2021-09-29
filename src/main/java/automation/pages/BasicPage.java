@@ -3,6 +3,9 @@ package automation.pages;
 import automation.util.WDriver;
 import   automation.Params.ParamInput;
 
+/***
+ * Super class for all the web pages.
+ */
 public class BasicPage {
     protected WDriver driver;
     protected ParamInput params;

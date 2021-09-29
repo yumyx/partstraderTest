@@ -12,9 +12,7 @@ public class UrlPage extends BasicPage{
     public UrlPage(WDriver driver, ParamInput paramInput) {
         super(driver, paramInput);
     }
-
-
-     public boolean waitForUrl(int waitsec ,String url){
+    public boolean waitForUrl(int waitsec ,String url){
 
          if(url==null)
              url=URL;

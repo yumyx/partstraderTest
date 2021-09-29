@@ -9,10 +9,6 @@ import automation.Params.ParamInput;
 import java.util.HashMap;
 
 public class DetailPage extends BasicPage{
-    public DetailPage(BasicPage page){
-        super( page);
-
-    }
 
     @FindBy(xpath="//*[@id=\"quantity_wanted_p\"]/a[2]")
     private WebElement plus;
@@ -33,6 +29,10 @@ public class DetailPage extends BasicPage{
     @FindBy(name="Submit")
     private WebElement addToCart;
 
+    public DetailPage(BasicPage page){
+        super( page);
+
+    }
     public void addProduct(ParamInput params){
         HashMap <String,WebElement> colorMap= new HashMap();
         colorMap.put("Green",Green);
@@ -46,15 +46,12 @@ public class DetailPage extends BasicPage{
 
 
        // plus.click();
-       // new Select(size).selectByVisibleText("M");
         new Select(size).selectByVisibleText(product.getSize());
        // Green.click();
 
         WebElement colorEm = colorMap.get(product.colour);
         if(colorEm!=null)
             colorEm.click();
-
-
 
         addToCart.click();
     }

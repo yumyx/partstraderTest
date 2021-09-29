@@ -3,6 +3,9 @@ package automation.util;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+/**
+ * ExtentReport is the third party lib for test reporting
+ */
 public class ExtentManager {
 	private static final ExtentReports extentReports = new ExtentReports();;
 	private static ExtentSparkReporter reporter;

@@ -16,7 +16,6 @@ public class OrderSummary extends BasicPage{
     private WebElement total;
 
 
-
     public String getTotal(){
         driver.waitForElement(total);
         return total.getText();

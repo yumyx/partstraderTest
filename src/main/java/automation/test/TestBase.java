@@ -11,15 +11,18 @@ import com.google.gson.Gson;
 
 import java.io.*;
 
+/**
+ * All test cases extend TestBase
+ */
 public class TestBase {
-	public WDriver driver;
-	private ExtentTest extent_test;
-
+	protected WDriver driver;
+    protected ExtentTest extent_test;
+    protected ParamInput parameter;
     public ParamInput getParameter() {
         return parameter;
     }
 
-    protected ParamInput parameter;
+
 	//private static final ExtentReports extentReports = new ExtentReports();
 	
     public WDriver initDriver() {

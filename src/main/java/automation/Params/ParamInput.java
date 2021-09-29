@@ -13,8 +13,14 @@ package automation.Params;
 
 
  */
+/***
+ * Class to obtain test data
+ */
 
+<<<<<<< Updated upstream:src/main/java/automation/Params/ParamInput.java
 
+=======
+>>>>>>> Stashed changes:src/test/java/Integration/Params/ParamInput.java
 import lombok.Data;
 
 @Data

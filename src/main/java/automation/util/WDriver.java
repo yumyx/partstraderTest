@@ -18,6 +18,11 @@ public class WDriver {
   private WebDriverWait wait ;
   private Actions action;
   private int timeout=15;
+
+    /**
+     * Init WebDriver Instance
+     * @return
+     */
   public WDriver init() {
 
       String driverLocation = ".\\lib\\chromedriver_win32\\chromedriver.exe";
@@ -29,17 +34,65 @@ public class WDriver {
 
       return this;
   }
+
+    /***
+     * Navigate to url
+     */
   public void get(String url) {
       driver.get(url);
   }
+    /***
+     * Get current url
+     * @param url
+     */
   public String currentURL(){
       return driver.getCurrentUrl();
   }
   public void pageFactoryInit(Object instance) {
 	  PageFactory.initElements(driver, instance);
-	 // PageFactory.initElements(driver, page);
   }
-  
+
+    /***
+     * Wait for Web Element to be visible in DOM
+     * @param element
+     */
+  public void waitForElement(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+  }
+
+    /***
+     * Find by with WebDriverWait. Wait for expected conditions
+     * @param by
+     * @return
+     */
+  public WebElement findBy(By by) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+
+   }
+
+    /**
+     * Hover over web element
+     * @param ele
+     */
+   public void hover(WebElement ele){
+        action.moveToElement(ele).perform();
+   }
+
+    /***
+     * Find elements. Return list.
+     * @param by
+     * @return
+     */
+   public List<WebElement> findElements(By by){
+        return driver.findElements(by);
+   }
+
+    /***
+     * Close all the browser windows and terminates the WebDriver session.
+     */
+   public void quit() {
+        driver.quit();
+   }
   public void sendActionKeys(Keys key) {
 	  action.sendKeys(key).perform();
 	  
@@ -59,23 +112,13 @@ public class WDriver {
 	  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(by));
 	 
   }
-  public void waitForElement(WebElement element) {
-	  wait.until(ExpectedConditions.visibilityOf(element));
-  }
+
   public void waitForElementClickable(WebElement element) {
 	  wait.until(ExpectedConditions.elementToBeClickable(element));
   }
-  public WebElement findBy(By by) {
-      return wait.until(ExpectedConditions.presenceOfElementLocated(by));
 
-  }
-  public void hover(WebElement ele){
 
-      action.moveToElement(ele).perform();
-  }
-  public List<WebElement> findElements(By by){
-	  return driver.findElements(by);
-  }
+
   public void sendKeysWithWait(WebElement elem,String s) {
 	  waitForElement(elem);
 	  elem.sendKeys(s);
@@ -111,9 +154,7 @@ public class WDriver {
   public void maximize() {
 	  driver.manage().window().maximize();	
   }
-  public void quit() {
-	  driver.quit();
-  }
+
   public void moveToElement(WebElement ele) {
       action.moveToElement(ele).perform();
   }
@@ -162,10 +203,9 @@ public class WDriver {
   public void takeScreenShot(String testName){
       TakesScreenshot scrShot =((TakesScreenshot)driver);
       File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-      //String filePath = ".\\screenshot.png";
       String filePath = ".\\"+testName+".png";
       File DestFile=new File(filePath);
-//Copy file at destination
+      //Copy file at destination
       try {
           FileUtils.copyFile(SrcFile, DestFile);
       } catch (IOException e) {

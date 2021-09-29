@@ -12,16 +12,10 @@ public class LoggerUtil {
 	static String fileBase = "./test-output/log/";
 	//public static void getLog(Class<?> clazz) {
 	public static void getLog() {
-		//String name = clazz.getSimpleName();
-	//	logger = Logger.getLogger(clazz);
-		System.out.println("#### In get log");
 
-		
-		
 		String log4JPropertyFile = "resources\\log4j.properties";
 	    PropertyConfigurator.configure(log4JPropertyFile);
 		logger=Logger.getRootLogger();
-		
 		
 	}
 	public static void logInfo(String s) {
