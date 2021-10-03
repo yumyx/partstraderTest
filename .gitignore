@@ -5,7 +5,8 @@
 .settings
 target
 .idea
-test-output
+test-output/**
 partstraderTest-main.zip
 partstraderTest-main (1).zip
-
+local
+~$*

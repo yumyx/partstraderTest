@@ -7,13 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="partstraderTest" />
         <module name="automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Integration" target="1.8" />
-      <module name="partstraderTest" target="1.8" />
+      <module name="partstraderTest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -32,6 +32,7 @@ public class SortView extends UrlPage{
 
         WebElement center_column = driver.findBy(By.id("center_column"));
 
+
         List<WebElement> list =  center_column.findElements(By.className("product-price"));
         Double cheapest=null;
         String cheapestText=null;
